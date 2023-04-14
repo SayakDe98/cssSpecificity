@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <style>
+            /*id is less spcific than inline-style*/
+            #header-id
+            {
+                color:green;
+            } 
+            /*class is less specific than inline-style*/
+            /* h1.header
+            {
+                color:red;
+            }*/
+            /*generic selctor tags are least specific*/
+            /*h1
+            {
+                color:blue !important;
+            } */
+
+            body #header-id
+            {
+                color:red;
+            }
+            body .header-2
+            {
+                color:black;
+            }
+            .text
+            {
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        /*inline-style has highest specificity*/
+        <h1 id = "header-id" class = "header header-2">Header</h1>
+        <p class = "text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fuga cum repellendus magnam pariatur. Eveniet saepe iure eum blanditiis asperiores nihil maiores aliquam nemo, ad officiis quas autem. Voluptatem ducimus ipsam praesentium esse doloremque, eaque eius culpa illum, iure in molestiae atque voluptatum dolores magnam. Dolorum voluptates deleniti velit in.
+        </p>
+    </body>
+</html>
